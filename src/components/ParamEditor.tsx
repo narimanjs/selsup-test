@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/prefer-as-const */
 import React, { useState, useEffect } from 'react';
 
-interface Param {
+export interface Param {
   id: number;
   name: string;
   type: 'string';
@@ -26,7 +27,7 @@ interface Props {
 const styles = {
   editor: {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column' as 'column',
     margin: '0 auto',
     maxWidth: '300px',
   },

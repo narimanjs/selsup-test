@@ -1,11 +1,10 @@
-import ParamEditor from './components/ParamEditor';
+import ParamEditor, { Param } from './components/ParamEditor';
 import './App.css';
 
 function App() {
-  const params = [
-    { id: 1, name: 'Назначение', type: 'string' },
-    { id: 2, name: 'Длина', type: 'string' },
-    // { id: 3, name: 'Новый параметр', type: 'string' },
+  const params: Param[] = [
+    { id: 1, name: 'Назначение', type: 'string' }, // правильно
+    { id: 2, name: 'Длина', type: 'string' }, // правильно
   ];
 
   const model = {
